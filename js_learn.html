@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+    <p id="p"></p>
+    
+    <label>Your name:</label>
+    <input id="n">
+    
+    <label>Password:</label>
+    <input id="paw">
+    
+    <br>
+    <button onclick="showme()">Click on me!</button>
+
+    <script>
+        function showme() {
+            var Username = window.n.value;
+            var psw = window.paw.value;
+            var msg = Username + "\n" + psw;
+            document.getElementById("p").innerHTML = msg;
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+
+     
+    function sayHello (){
+       var Username = window.n.value;
+        document.getElementById('p').innerHTML="Hello "+ Username;}
+
+        var Name = prompt("Hello, Enter your name ");
+        alert("Welcome "+Name+"\n How are you")
+        
+        if(confirm("do you like js"))
+        alert("Good");
+    else
+        alert("you need try more ");
+
+-->
